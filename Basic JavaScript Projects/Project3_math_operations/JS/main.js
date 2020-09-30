@@ -43,3 +43,5 @@ window.alert(Math.random() * 100); //creates an alert box with a random number b
 function power() { //power function 
 document.getElementById("power").innerHTML = Math.pow(7,3);
 }
+
+
