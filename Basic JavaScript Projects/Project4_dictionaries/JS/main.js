@@ -1,11 +1,11 @@
 function my_dictionary() {
-    var Clothing = {
+    var Clothing = { //Lists properties of object
         Item:"Shirt",
         Size:"Small",
         Color:"Blue",
         Occasion:"Casual"
     };
-    document.getElementById("Dictionary").innerHTML = Clothing.Occasion;
+    document.getElementById("Dictionary").innerHTML = Clothing.Occasion; //displays Occasion on HTML page
 }
 
 function my_dictionary2() {
@@ -14,6 +14,6 @@ function my_dictionary2() {
         Taste:"sweet",
         Name:"Gala",
     };
-    delete Apples.Name;
+    delete Apples.Name; //deletes Name category
     document.getElementById("Dictionary2").innerHTML = Apples.Name;
 }
