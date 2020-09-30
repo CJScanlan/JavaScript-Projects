@@ -16,3 +16,14 @@ function myFunction() {
     sentence += " a lot from this book"; //new method to concatenate
     document.getElementById("Concatenate").innerHTML = sentence;
 }
+
+function Test() {
+    var str = "Purple";
+    var result = str.fontcolor("purple");
+    document.getElementById("demo").innerHTML = result;
+}
+
+function add(x,y) {
+    return x + y;
+}
+document.getElementById("addition").innerHTML = add(5, 7);
