@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="JavaScript/JavaScript_3.js" defer></script>
+    </head>
+    <body>
+
+<!-- Using data attribute to give HTML interactivity with JS -->
+        <h1>Ecology</h1>
+        <h3>Click on a biome to see what lives there!</h3>
+
+        <ul>
+            <li onclick="displayType(this)" id="tundra"
+                data-animal-type="Polar Bears">Tundra</li>
+            <li onclick="displayType(this)" id="desert"
+                data-animal-type="Bearded Dragons">Desert</li>
+            <li onclick="displayType(this)" id="tropical-rainforest"
+                data-animal-type="Parrots">Tropical Rainforest</li>
+            <li onclick="displayType(this)" id="taiga"
+                data-animal-type="Caribous">Taiga</li>
+            <li onclick="displayType(this)" id="savanna"
+                data-animal-type="Wildebeests">African Savanna</li>
+            <li onclick="displayType(this)" id="chaparral"
+                data-animal-type="Ladybugs">Chaparral</li>
+        </ul>
+
+
+    </body>
+</html>

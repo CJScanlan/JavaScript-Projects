@@ -1,0 +1,45 @@
+h2 { /*for form header*/
+    text-align: center;
+    color: turquoise;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+}
+
+input[type=text], input[type=email] { /*For text and email inputs*/
+    padding: 12px;
+    width:100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid teal;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] { /*submit button*/
+    width: 40%;
+    background-color: turquoise;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border: 1px solid teal;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+input[type=submit]:hover { /*submit button hover*/
+    background-color: darkturquoise
+}
+
+.container { /*form container*/
+    position: relative;
+    background-color: lightblue;
+    padding: 20px;
+    margin: auto;
+    width: 25%;
+    display: block;
+    border: 2px solid teal;
+    border-radius: 20px;
+}
+
+

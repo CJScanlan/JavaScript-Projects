@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/CSS_1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <script src="JavaScript/JavaScript_2.js" defer></script>
+    </head>
+    <body>
+<!--- Contact form --->
+        <h2>Contact</h2>
+        <div class="container">
+        <form name="myForm" action ="" onsubmit="return validateForm()" method="post"><!-- Calls JS function -->
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+
+    </body>
+</html>
