@@ -1,0 +1,83 @@
+body {
+    background-color: lightcoral;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: maroon;
+    text-align: center;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
+
+div {
+    font-family: 'Courier New', Courier, monospace;
+    color:brown;
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#menuBG {
+    width: 800px;
+    height: 470px;
+    margin: 10px auto;
+    display: block;
+}
+
+#frmMenu {
+    width: 800px;
+    height: 200px;
+    display: block;
+}
+
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+/*menu columns*/
+.menu {
+    float: left;
+    width: 250px;
+    padding: 10px 30px;
+    height: 200px;
+}
+
+
+/*clear floats after columns*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top:0;
+    margin:0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+    display: block;
+}
