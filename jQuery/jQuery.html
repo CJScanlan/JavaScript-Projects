@@ -6,6 +6,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
+        <p>Paragraph</p>
 <!-- JQuery practice -->
         <script>
             $(document).ready(function() { //when document loads, display following:
@@ -40,7 +41,10 @@
                 //will not have the same click behavior as its peers
                 $( "<button class='alert'>Alert!</button>" ).appendTo( document.body );
             });
-
+// Event setup using a convenience method
+$( "p" ).click(function() {
+    console.log( "You clicked a paragraph!" );
+});
  
 
         </script>
