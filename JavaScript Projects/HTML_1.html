@@ -3,10 +3,34 @@
     <head>
         <meta charset="utf-8">
         <script src="JavaScript/JavaScript_1.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     </head>
     <body>
+        <script>
+            //JS for fade-in effect of page elements
+            document.body.className += 'fade-out';
+
+            $(function() {
+                $('body').removeClass('fade-out')
+            })
+
+        </script>
+
+    <style> /*Fade-in effect when page loads*/
+        body {
+            opacity: 1;
+            transition: 1s opacity;
+        }
+
+        body.fade-out {
+            opacity: 0;
+            transition: none;
+        }
+
+    </style>
 <!--- Using JS Switch statement --->
-        <h1>What is your favorite animal?</h1>
+        <h1 style="font-size:3vw;">What is your favorite animal?</h1>
         <h3>Pick your favorite animal from this list:</h3>
         <ul>
             <li>Tiger</li>

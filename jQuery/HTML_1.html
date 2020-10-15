@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <style>
+
+        h1 {
+            text-align: center;
+            color: orange;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #slideshow {
+            margin: 50px auto;
+            position: relative;
+            width: 240px;
+            height: 240px;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        #slideshow > div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+        }
+
+
+    </style>
+    <body>
+        <h1> Tis the Season! </h1>
+        <!--- slideshow --->
+        <div id="slideshow">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/1537/5553/products/00691_1024x1024.jpg?v=1581943674" alt="pumpkins" style="height: 240px; width: 240px;">
+            </div>
+            <div>
+                <img src="https://parkseed.com/images/xxl/05689-pk-p1.jpg?v=101221716445-1" alt="pumpkin" style="height: 240px; width: 240px;">
+            </div>
+            <div>
+                <img src="https://www.gardeningknowhow.com/wp-content/uploads/2015/10/bumpy-pumpkin-1.jpg" alt="fantasy pumpkin" style="height: 240px; width: 240px;">
+            </div>
+        </div>
+
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() {
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 3000);
+
+        </script>
+
+    </body>
+</html>

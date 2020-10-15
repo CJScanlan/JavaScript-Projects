@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /*button used to open contact form*/
+        .open-button {
+            background-color: green;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+
+        .open-button:hover {
+            animation: zoominout 1s;
+        }
+
+        /*pop up form - hidden by default*/
+        .form-popup {
+            display: none;
+            z-index: 1;
+        }
+
+        /* form container styles*/
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: whitesmoke;
+            display: block;
+            margin: auto;
+            position: relative;
+            animation: mymove 5s;
+        }
+
+        .form-container input[type=text] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid blue;
+            background: white;
+        }
+
+        /*using @keyframes to make form move*/
+        @keyframes mymove {
+            from {top: 0px;}
+            to {top: 50px;}
+        }
+
+        @keyframes zoominout {
+            0% {
+                transform: scale(1,1);
+            }
+            50% {
+                transform: scale(1.2,1.2);
+            }
+            100% {
+                transform: scale(1,1);
+            }
+        }
+
+
+
+    </style>
+
+    <body>
+
+        <!-- button to open form -->
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        <!-- pop up contact form -->
+        <div class="form-popup" id="myForm">
+        <form name="myForm" onsubmit="return validateForm()" method="post" class="form-container">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="phone">Phone number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="111-111-1111" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+        </div>
+
+        <script>
+            //form validation
+            function validateForm() {
+                var x = document.forms["myForm"]["fname","lname","phone"].value;
+                if (x== "") {
+                    alert("Form must be filled out");
+                    return false;
+                }
+            }
+
+            //pop up form
+            function openForm() {
+                document.getElementById("myForm").style.display = "block";
+            }
+
+            function closeForm() {
+                document.getElementById("myForm").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
