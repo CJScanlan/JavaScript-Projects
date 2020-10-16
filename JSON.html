@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html land="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="dog"></p>
+
+        <script>
+            //using JSON stringify method
+            var dog = {"name": "Luna", "age": 1, "breed":"lab", "color":"black"};
+            var myJSON = JSON.stringify(dog);
+            document.getElementById("demo").innerHTML = myJSON;
+
+            //parsing back from JSON string to JavaScript object
+            var dog2 = '{"name":"Luna","age":1,"breed":"lab","color":"black"}';
+            var JSONstring = JSON.parse(dog2);
+            document.getElementById("demo2").innerHTML = JSONstring.name + " the " + JSONstring.color + " " + JSONstring.breed;
+
+            //set data as key/value pair to be saved locally in the browser
+            localStorage.setItem("name", "Luna");
+            //use key "name" to return its value
+            document.getElementById("dog").innerHTML = localStorage.getItem("name");
+
+        </script>
+    </body>
+</html>
