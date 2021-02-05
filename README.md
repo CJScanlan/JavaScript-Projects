@@ -1,5 +1,5 @@
 # JavaScript Projects
-Projects I made for The Tech Academy utilizing basic HTML and CSS. 
+Projects I made for The Tech Academy utilizing JavaScript
 
 ## Projects:
 * [Tic Tac Toe](https://github.com/CJScanlan/JavaScript-Projects/tree/master/TicTacToe)
